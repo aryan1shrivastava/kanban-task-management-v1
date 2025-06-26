@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="
+    style.css"
+    />
+    <title>KanBan Board</title>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>KanBan Board</h1>
+    </div>
+    <div class="container">
+      <div class="board" id="todo">
+        <h4>Todo</h4>
+        <br />
+        <hr />
+        <p class="item" draggable="true">Learn React</p>
+        <p class="item" draggable="true">Learn Javascript</p>
+      </div>
+      <div class="board" id="in-progress">
+        <h4>In Progress</h4>
+        <br />
+        <hr />
+      </div>
+      <div class="board" id="done">
+        <h4>Done</h4>
+        <br />
+        <hr />
+      </div>
+    </div>
+    <div class="add-task-container">
+      <button class="add-task" id="add-task">Add task</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

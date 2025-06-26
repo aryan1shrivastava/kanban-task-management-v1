@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #cbe8fa;
+  color: #333;
+  font-size: 16px;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  padding-bottom: 0px;
+}
+
+.board {
+  width: 400px;
+  padding: 20px;
+  height: 80vh;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
+}
+
+.item {
+  margin: 20px 10px;
+  padding: 20px 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
+  cursor: grab;
+  font-weight: 700;
+  background-color: #ffffff;
+  border-radius: 6px;
+}
+.item.dragging {
+  opacity: 0.5;
+  background-color: #dfdfdf;
+}
+.item:hover {
+  background-color: #f0f0f0;
+}
+
+.add-task {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
+  background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #000000;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+.add-task:hover {
+  background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+  background-color: #f6f6f6;
+}
+.add-task:active {
+  position: relative;
+  top: 1px;
+}
+
+#todo {
+  background-color: rgb(245, 245, 232);
+  overflow-y: auto;
+}
+
+#in-progress {
+  background-color: rgb(205, 243, 255);
+  overflow-y: auto;
+}
+
+#done {
+  background-color: rgb(200, 253, 200);
+  overflow-y: auto;
+}
+.add-task-container {
+  display: flex;
+  padding-top: 20px;
+  padding-left: 20px;
+}
